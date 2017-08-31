@@ -1,0 +1,44 @@
+Time-stamp: <2014-08-20 09:49:18 aronov>
+
+Some comments:
+
+This is a template for PhD thesis, Poly style.  The main ingredient is
+the class file polythesis.cls.  
+
+thesis.tex is the main document, it contains nothing but some set up,
+	   plus calls to include all the pieces, and nothing much
+	   else.
+
+	   run "pdflatex thesis" to generate the actual PDF file,
+	   several times, until all the cross-references are resolved.
+
+NOTE: There's an extra page at the beginning, just for you.  It's not
+part of the thesis and can be removed.  In fact it MUST be removed
+before the thesis is bound.
+
+chapter1/
+chapter2/
+chapter3/ directory where chapter1-related files and figures are.
+	  make one directory for every chapter, or remove directories
+	  from the thesis.tex \include command and put all files in
+	  the main directory.
+
+Some packages that are used (or can be used) with Poly thesis class.
+Comment them out in thesis.tex file, if you do not need them.
+
+To create algorithms and make them float, like figures and tables:
+- algorithm.sty   
+- algorithmic.sty (outdated, needs replacement!)
+
+Control over captions in figures etc:
+- ccaption.sty
+
+Layout of the page (HARDWIRED into the .cls file; cannot be removed):
+- geometry.cfg
+
+To be able to create figures with many subfigures (interacts with ccaption):
+- subfigure.sty
+
+To be able to nest sections very deeply (do NOT use unless you
+absolutely have to; not pretty):
+- subsections.sty

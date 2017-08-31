@@ -1,0 +1,6 @@
+This is one way to organize a chapter:
+
+chapter1.tex is the body of the chapter
+org.pdf is a figure to be included, no subdirectories for figures
+
+in other chapters, just for example, there are local figures/ subdirectories, if you feel the need of a separate directory for figures for each chapter.
